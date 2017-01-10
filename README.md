@@ -21,14 +21,16 @@ $ brew install ios-deploy
 ##安装ideviceinstaller
 $ brew install ideviceinstaller
 
-#安装carthage
+##安装carthage
 $ brew install carthage
 
 ##检测macaca环境
 $ macaca doctor
 
 # 2、打包WDA
+重新签名后打包WDA
 
 # 3、执行iosMonkey
+$ macaca server --verbose
 $ java -jar [iosMonkey.jar Path] -u [设备的UDID] -b [测试App的BundleID]
 
